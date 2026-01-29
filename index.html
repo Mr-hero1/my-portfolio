@@ -1,104 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mohammed Abdulcareem Tiher</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 0 20px;
-            background-color: #f4f7f6;
+        * {
+            margin: 2;
+            padding: 0;
+            box-sizing: border-box;
         }
-        .cv-container {
-            background: #fff;
-            padding: 40px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            border-radius: 8px;
+
+        body, html {
+            height: 100%;
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #1a1b26;
+            color: #a9b1d6;
+            overflow-x: hidden;
         }
-        header {
-            border-bottom: 3px solid #2c3e50;
-            padding-bottom: 20px;
-            margin-bottom: 30px;
-        }
-        h1 {
-            margin: 0;
-            color: #2c3e50;
-            font-size: 2.5em;
-            text-transform: uppercase;
-        }
-        .contact-info {
-            color: #7f8c8d;
-            font-size: 0.9em;
-            margin-top: 5px;
-        }
-        h2 {
-            color: #2980b9;
-            border-bottom: 1px solid #eee;
-            padding-bottom: 5px;
-            margin-top: 30px;
-        }
-        .section-content {
-            margin-left: 5px;
-        }
-        .skill-tag {
-            display: inline-block;
-            background: #ecf0f1;
-            padding: 4px 12px;
-            border-radius: 15px;
-            margin: 5px 2px;
-            font-size: 0.9em;
-            font-weight: 500;
-        }
-        .education-item {
+
+        .top-box {
+            height: 10vh;
+            width: 100%;
+            background-color: #24283b;
+            border: 2px solid #414868;
             display: flex;
-            justify-content: space-between;
-            align-items: baseline;
+            align-items: center;
+            justify-content: center;
         }
-        .date {
-            font-weight: bold;
-            color: #7f8c8d;
+
+        .main-container {
+            display: flex;
+            height: 85vh;
+            width: 100%;
         }
+
+        .main-content {
+            width: 100%;
+            background-color: #16161e;
+            padding: 1ch;
+            border-left: 2px solid #414868;
+            border-right: 2px solid #414868;
+            border-bottom: 2px solid #414868;
+        }
+
+				.lang-grid {
+						display: flex;
+						flex-wrap: wrap;
+						gap: 3ch; 
+						margin-top: 1ch;
+				}
+
+				.label {
+						color: #f7768e;
+						font-weight: bold;
+				}
+
+				.lang-item {
+						background: #24283b; 
+						padding: 0.5ch 1ch;
+						border-radius: 4px;
+				}
+
+				.link-footer {
+            margin-top: auto; 
+            padding-top: 2ch;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2ch;
+            justify-content: center;
+        }
+
+        .action-link {
+            color: #7aa2f7;
+            text-decoration: none;
+            border: 1px solid #7aa2f7;
+            padding: 1ch 2ch;
+            transition: all 0.3s;
+        }
+
+        .action-link:hover {
+            background-color: #7aa2f7;
+            color: #16161e;
+        }
+        
+        h1 { color: #7aa2f7; font-size: clamp(0rem, 3vw, 2rem); }
+        h2 { color: #f7768e; margin-bottom: 1ch; }
+        p {  }
     </style>
 </head>
 <body>
 
-<div class="cv-container">
-    <header>
-        <h1>Mohammed Abdulcareem Tiher</h1>
-        <div class="contact-info">
-            Duhok, Iraq | [Email Address] | [Phone Number] | [LinkedIn/GitHub]
-        </div>
-    </header>
-
-    <section>
-        <h2>About Me</h2>
-        <p>
-           I am currently looking for opportunities to improve my skills and for ways to use what I’m learning in university to help out with local projects, gain some real-world experience, and contribute to the food industry in the region.
-I like to stay tech-savvy and use digital tools to make my work more efficient. I am also multilingual, which helps me research international standards and communicate with different teams.
-        </p>
-    </section>
-
-    <section>
-        <h2>Languages</h2>
-        <div class="section-content">
-            <span class="skill-tag">Kurdish (Native)</span>
-            <span class="skill-tag">English (Independent/Self-taught)</span>
-            <span class="skill-tag">Arabic (Basic)</span>
-            <span class="skill-tag">Persian (Basic)</span>
-        </div>
-    </section>
-
-    <section>
-        <h2>Technical Skills</h2>
-        <p><strong>Digital Systems:</strong> Linux & Bash Scripting (Automation-focused)</p>
-        <p><strong>Development:</strong> Web Development (HTML/CSS)</p>
-    </section>
-</div>
-
+    <div class="top-box">
+        <h1>> Mohammed Abdulcareem Tiher</h1>
+    </div>
+        <main class="main-content">
+            <h2>[Mohammed Abdulcareem Tiher]</h2>
+            <p>3rd Year Food Science & Technology Bachelor Student
+            College of Agricultural Engineering Sciences – [UNIVERSITY OF DUHOK]</p>
+						
+            <h2>{About Me}</h2>
+            <p>I am currently looking for opportunities to improve my skills and for ways to use what I’m learning in university to help out with local projects, gain some real-world experience, and contribute to the food industry in the region.</p>
+            <p>I like to stay tech-savvy and use digital tools to make my work more efficient. I am also multilingual, which helps me research international standards and communicate with different teams</p>
+						<h2>{Languages}</h2>
+						<div class="lang-grid">
+								<div class="lang-item"><span class="label">KURDISH:</span> Native</div>
+								<div class="lang-item"><span class="label">ENGLISH:</span> Independent (Self-taught)</div>
+								<div class="lang-item"><span class="label">ARABIC:</span> Basic</div>
+								<div class="lang-item"><span class="label">PERSIAN:</span> Basic</div>
+						</div>
+						<h2>Tech Skills</h2>
+						<div class="lang-grid">
+								<div class="lang-item"><span class="label">WEB DEVELOPMENT:</span> (Self-taught)</div>
+								<div class="lang-item"><span class="label">LINUX & SCRIPTING:</span>(Self-taught)</div>
+						</div>
+						<footer class="link-footer">
+            <a href="https://linkedin.com" class="action-link">[ LINKEDIN ]</a>
+            <a href="https://github.com" class="action-link">[ GITHUB ]</a>
+            <a href="mailto:your@email.com" class="action-link">[ EMAIL ]</a>
+            <a href="#" class="action-link">[ RESUME.PDF ]</a>
+        </footer>
+        </main>
+    </div>
 </body>
 </html>

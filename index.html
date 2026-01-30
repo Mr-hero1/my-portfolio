@@ -2,7 +2,6 @@
 <html>
 <head>
     <title>Mohammed Abdulcareem | Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
@@ -70,9 +69,6 @@
             color: #181825;
             box-shadow: 0 0 15px rgba(137, 180, 250, 0.4);
         }
-        @keyframes blink {
-            50% { border-color: transparent; }
-        }
         
         .top-box {
             height: 10vh;
@@ -125,7 +121,6 @@
             justify-content: center;
             align-items: center;
         }
-
         .action-link {
         	display: inline-flex;
             align-items: center;
@@ -136,7 +131,12 @@
             padding: 1ch 1ch;
             transition: all 0.3s;
         }
-
+		.action-link svg {
+        width: 1.2rem;
+        height: 1.2rem;
+        fill: currentColor;
+        vertical-align: middle;
+    	}
         .action-link:hover {
             background-color: #89b4fa;
             color: #16161e;

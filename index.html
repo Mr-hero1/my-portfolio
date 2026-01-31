@@ -143,9 +143,16 @@
             background: #24283b;
             padding: 15px;
             border-radius: 4px;
+			position: relative; 
+    		overflow: hidden;
             transition: all 0.5s ease;
         }
         .project-block h4 {
+			position: absolute;
+    		top: 25px;     
+    		left: 25px;     
+    		z-index: 2;  
+			pointer-events: none; 
             color: #cba6f7; 
             margin-bottom: 12px;
             font-size: 1.1rem;

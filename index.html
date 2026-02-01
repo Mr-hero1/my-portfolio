@@ -121,14 +121,13 @@
         }
 
         .label {
-                color: #cba6f7;
+                color: #a6e3a1;
                 font-weight: bold;
         }
 
         .lang-item {
                 background: #24283b; 
                 padding: 0.5ch 1ch;
-                border-radius: 4px;
         }
         
         .project-link {
@@ -154,11 +153,12 @@
             }
         }
         .project-block {
-            background: #24283b;
+            background: transparent;
+            color: #bac2de;
             padding: 2px;
-            border-radius: 4px;
 			position: relative; 
     		overflow: hidden;
+            border: 2px solid #89b4fa;
             transition: all 0.5s ease;
         }
         .project-block h4 {
@@ -169,31 +169,23 @@
 			pointer-events: none; 
 			background-color: #1e1e2e;     
             padding: 4px 7px;             
-            border: 1px solid #cba6f7;     
-            border-radius: 4px;             
+            border: 1px solid #89b4fa;     
             box-shadow: 0 4px 15px rgba(0,0,0,0.5);
-            color: #cba6f7; 
+            color: #89b4fa; 
             margin-bottom: 12px;
             font-size: 1.1rem;
             display: flex;
             align-items: left;
-        }
-        .project-block h4::before {
-            content: "> ";
-            margin-right: 5px;
         }
         .project-block img {
             height: 150px;         
             width: 98%;
             object-fit: cover;
             margin: 5px auto;
-            border-radius: 2px;
-            border:2px solid #ffffff;
             margin-bottom: 8px;
             display: block;
         }
         .project-block p {
-            color: #bac2de;
             font-size: 0.95rem;
             line-height: 1.5;
             margin-left: 10px;
@@ -201,9 +193,7 @@
         }
         .project-block:hover {
         transform: translateY(-5px);
-        border-color: #cba6f7;      
-        box-shadow: 0 10px 20px rgba(203, 166, 247, 0.2); 
-        background: #292e42;        
+        box-shadow: 0 10px 20px rgba(203, 166, 247, 0.3); 
         }
 				
 		#links {
@@ -226,7 +216,7 @@
             color: #89b4fa;
             text-decoration: none;
             border: 1px solid #89b4fa;
-            padding: 1ch 1ch;
+            padding: 0.8ch 0.5ch;
             transition: all 0.3s;
         }
 		.action-link svg {
@@ -246,7 +236,7 @@
         }
 		
         h1 { color: #a6e3a1; font-size: clamp(1.5rem, 6vw, 2rem); }
-        h2 { color: #cdd6f4; margin-bottom: 1ch; }
+        h2 { color: #cba6f7; margin-bottom: 1ch; }
         h3 { color: #cdd6f4; margin-bottom: 1ch; font-size: 1.2rem; }
         p  { margin-bottom: 1ch; }
 
@@ -263,42 +253,41 @@
         </div>
     </div>
     <div class="top-box">
-        <h1 id="greeting">> Hi ;)</h1>
+        <h1 id="greeting">></h1>
     </div>
         <main class="main-content" id="content-area">
-            <h2 id="name">Mohammed Abdulcareem Tiher</h2>
-            <p id="sub-info">3rd Year Food Science & Technology Bachelor Student
-            College of Agricultural Engineering Sciences – UNIVERSITY OF DUHOK</p>
+            <h2 id="name"></h2>
+            <p id="sub-info"></p>
 						
-            <h3 id="about-head">{About Me}</h3>
-            <p id="about-text1">I am currently looking for opportunities to improve my skills and for ways to use what I’m learning in university to help out with local projects, gain some real-world experience, and contribute to the food industry in the region.</p>
-            <p id="about-text2">I like to stay tech-savvy and use digital tools to make my work more efficient. I am also multilingual, which helps me research international standards and communicate with different teams</p>
-            <h3 id="lang">{Languages}</h3>
+            <h3 id="about-head"></h3>
+            <p id="about-text1"></p>
+            <p id="about-text2"></p>
+            <h3 id="lang"></h3>
             <div class="lang-grid">
                     <div class="lang-item"><span class="label">KURDISH:</span> Native</div>
                     <div class="lang-item"><span class="label">ENGLISH:</span> Advanced (Self-taught)</div>
                     <div class="lang-item"><span class="label">ARABIC:</span> Basic</div>
                     <div class="lang-item"><span class="label">PERSIAN:</span> Basic</div>
             </div>
-            <h3 id="tech">{Tech Skills}</h3>
+            <h3 id="tech"></h3>
             <div class="lang-grid">
                     <div class="lang-item"><span class="label">WEB DEVELOPMENT</span></div>
                     <div class="lang-item"><span class="label">LINUX & SCRIPTING</span></div>
             </div>
             
-            <h3 id="projects-head">{Projects}</h3>
+            <h3 id="projects-head"></h3>
             <div class="project-container">
                 <a href="https://github.com/Mr-hero1/my-cv" class="project-link" target="_blank">
                     <div class="project-block">
-                        <h4 id="p1-title">Portfolio</h4>
+                        <h4 id="p1-title"></h4>
                         <img src="images/p1preview.png" alt="">
-                        <p id="p1-desc">This page is my first complate project.</p>
+                        <p id="p1-desc"></p>
                     </div>
                 </a>
             </div>
 
             </div>
-           <h3 id="links">{My links}</h3>
+           <h3 id="links"></h3>
            <footer class="link-footer">
             <a href="https://www.linkedin.com/in/mohammed-abdulkareem-88a0263aa" class="action-link" aria-label="LinkedIn">
                 [<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" fill="currentColor"/></svg>]
@@ -327,7 +316,7 @@
             langHead: "# Languages",
             techHead: "# Tech Skills",
             projectsHead: "# Projects",
-            p1Title: "Portfolio",
+            p1Title: "[ Portfolio ]",
             p1Desc: "This page is my first complete project.",
             linksHead: "# My links",
             
@@ -344,7 +333,7 @@
             langHead: "# زمان",
             techHead: "# شیانێن تەکنیکی",
             projectsHead: "# پڕۆژەکان",
-            p1Title: "پۆرتفۆلیۆ",
+            p1Title: "[ پۆرتفۆلیۆ ]",
             p1Desc: "ئەم پەڕەیە یەکەم پڕۆژەی تەواوکراوی منە.",
             linksHead: "# لینکێن من",
             isRtl: true
@@ -359,7 +348,7 @@
             langHead: "# اللغات",
             techHead: "# المهارات التقنية",
             projectsHead: "# المشاريع",
-            p1Title: "الموقع الشخصي",
+            p1Title: "[ الموقع الشخصي ]",
             p1Desc: "هذه الصفحة هي أول مشروع متكامل قمت ببنائه.",
             linksHead: "# روابطي",
             isRtl: true
@@ -374,7 +363,7 @@
             langHead: "# زبان‌ها",
             techHead: "# مهارت‌های فنی",
             projectsHead: "# پروژه‌ها",
-            p1Title: "پورتفولیو",
+            p1Title: "[ پورتفولیو ]",
             p1Desc: "این صفحه اولین پروژه کامل من است.",
             linksHead: "# لینک‌های من",
             isRtl: true

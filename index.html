@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <title>My Portfolio</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
    <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,10 +27,10 @@
   font-style: normal;
 }
 
-		.top-box, .main-content, .link-footer {
+                .top-box, .main-content, .link-footer {
         margin: 10px;
-    	}
-		
+            }
+
         body, html {
             height: 100%;
             font-family: "IBM Plex Sans Arabic", sans-serif;
@@ -40,14 +40,14 @@
             scrollbar-width: none; 
             -ms-overflow-style: none;
         }
-        
+
         body::-webkit-scrollbar {
         display: none;
         }
 
         #start-screen {
             position: fixed;
-			inset: 0;
+                        inset: 0;
             top: 0;
             left: 0;
             width: 100%;
@@ -84,7 +84,7 @@
             font-weight: bold;
             text-transform: uppercase;
         }
-        
+
         .top-box {
             height: 10vh;
             width: calc(100% - 20px);
@@ -123,7 +123,7 @@
                 background: #24283b; 
                 padding: 0.5ch 1ch;
         }
-        
+
         .project-link {
             text-decoration: none; 
             color: inherit;        
@@ -151,14 +151,14 @@
             background: transparent;
             color: #bac2de;
             padding: 2px;
-			position: relative; 
-    		overflow: hidden;
+                        position: relative; 
+                    overflow: hidden;
             border: 2px solid #9399b2;
             transition: all 0.5s ease;
         }
         .project-block h4 {
             justify-content: space-between;
-			pointer-events: none; 
+                        pointer-events: none; 
             padding: 3px 7px;             
             box-shadow: 0 4px 15px rgba(0,0,0,1);
             color: #89b4fa; 
@@ -171,7 +171,7 @@
             font-size: 0.95rem;
             line-height: 1.5;
             margin-left: 10px;
-			margin-right: 10px; 
+                        margin-right: 10px; 
         }
         .project-more {
             display: inline-block;
@@ -188,11 +188,11 @@
         transform: translateY(-5px);
         box-shadow: 0 10px 20px rgba(203, 166, 247, 0.3); 
         }
-				
-		#links {
+
+                #links {
             padding-top: 20px;
         }
-		.link-footer {
+                .link-footer {
             border: 2px solid #9399b2;
             margin: auto; 
             padding: 5px;
@@ -203,7 +203,7 @@
             align-items: center;
         }
         .action-link {
-        	display: inline-flex;
+                display: inline-flex;
             align-items: center;
             gap: 10px;
             color: #89b4fa;
@@ -212,13 +212,13 @@
             padding: 8px 3px;
             transition: all 0.3s;
         }
-		.action-link svg {
+                .action-link svg {
             width: 1rem;
             height: 1rem;
             fill: currentColor;
             vertical-align: middle;
             flex-shrink: 0;
-    	}
+            }
         .action-link:hover, .lang-btn:hover {
             background-color: #89b4fa;
             color: #16161e;
@@ -230,15 +230,15 @@
             display: block;
         }
 
-		.rtl {
+                .rtl {
             direction: rtl;
             text-align: right;
         }
-		
+
         h1 { color: #a6e3a1; font-size: clamp(1.2rem, 6vw, 2rem); }
         h2 { color: #cba6f7; margin-bottom: 1ch; }
         h3 {margin-bottom: 1.2ch; margin-top: 1.2ch; font-size: 1.2rem; }
-        
+
     </style>
 </head>
 <body>
@@ -257,7 +257,7 @@
         <main class="main-content" id="content-area">
             <h2 id="name"></h2>
             <p id="sub-info"></p>
-						
+
             <h3 id="about-head" style="color: #eba0ac;"></h3>
             <p id="about-text1"></p>
             <p id="line"></p>
@@ -274,7 +274,7 @@
                     <div class="lang-item"><span class="label" style="color: #e78284;">inkscape</span></div>
                     <div class="lang-item"><span class="label" style="color: #e78284;">Linux</span></div>
             </div>
-            
+
             <h3 id="projects-head" style="color: #74c7ec;"></h3>
             <div class="project-container">
                 <a href="https://github.com/Mr-hero1/my-cv" class="project-link" target="_blank">
@@ -297,16 +297,16 @@
             <a href="https://www.linkedin.com/in/mohammed-abdulkareem-88a0263aa" class="action-link" aria-label="LinkedIn">
                 [<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" fill="currentColor"/></svg>]
             </a>
-		    <a href="https://github.com/Mr-hero1" class="action-link" aria-label="GitHub">
-		        [<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" fill="currentColor"/></svg>]
-		    </a>
-		    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mohammed.hero1@proton.me" class="action-link" aria-label="Email">
-		        [<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" fill="currentColor"/></svg>]
-		    </a>
-		    <a href="#" class="action-link" aria-label="Download CV">
-		        [<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V7H10c.83 0 1.5.67 1.5 1.5v1zm5 2c0 .83-.67 1.5-1.5 1.5h-2.5V7H15c.83 0 1.5.67 1.5 1.5v3zm4-3H19v1h1.5V11H19v2h-1.5V7h3v1.5zM9 9.5h1v-1H9v1zM14 12h1V8h-1v4zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6z" fill="currentColor"/></svg>]
-		    </a>
-		</footer>
+                    <a href="https://github.com/Mr-hero1" class="action-link" aria-label="GitHub">
+                        [<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" fill="currentColor"/></svg>]
+                    </a>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mohammed.hero1@proton.me" class="action-link" aria-label="Email">
+                        [<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" fill="currentColor"/></svg>]
+                    </a>
+                    <a href="#" class="action-link" aria-label="Download CV">
+                        [<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V7H10c.83 0 1.5.67 1.5 1.5v1zm5 2c0 .83-.67 1.5-1.5 1.5h-2.5V7H15c.83 0 1.5.67 1.5 1.5v3zm4-3H19v1h1.5V11H19v2h-1.5V7h3v1.5zM9 9.5h1v-1H9v1zM14 12h1V8h-1v4zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6z" fill="currentColor"/></svg>]
+                    </a>
+                </footer>
         </main>
     </div>
     <script>
@@ -325,8 +325,8 @@
             p1Desc: "This page is my first complete project.",
             p1More: "More...",
             linksHead: "## My links",
-            
-            
+
+
             isRtl: false
         },
         ku: {
@@ -405,7 +405,7 @@
     contentArea.classList.remove('rtl');
 }
 
-        
+
         startScreen.style.opacity = '0';
         setTimeout(() => {
             startScreen.style.display = 'none';
